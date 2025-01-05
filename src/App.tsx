@@ -7,11 +7,11 @@ function App() {
 
   return (
     <>
-     Hello Okten
-        {
-            MyComponents({text:'hello2'})
-        }
-        <MyComponents text={'hello1'}/>
+     {/*Hello Okten*/}
+
+        <MyComponents title={'hello1'}>
+            Hello
+            </MyComponents>
 
           </>
   );

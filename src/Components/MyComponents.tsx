@@ -1,5 +1,15 @@
+import {FC, ReactNode} from "react";
 
-function MyComponent({text}:{text:string}){
-    return <div className={'text-3xl font-bold underline'}>   {text}  </div>
-}
-export default MyComponent;
+type MyComponentsPropType = {
+    title:string;
+    children?:ReactNode;
+
+};
+const MyComponents: FC <MyComponentsPropType> =({title,children})=> {
+    return (<div className={'text-3xl font-bold underline'}>
+            <h2> {title} </h2>
+            <p> {children}</p>
+        </div>
+    );
+};
+export default MyComponents;
