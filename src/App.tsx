@@ -1,5 +1,5 @@
 import './App.css'
-import MyComponents from "./Components/MyComponents.tsx";
+import {FamilyComponent} from "./Components1/FamilyComponent/FamilyComponent.tsx";
 
 
 function App() {
@@ -7,11 +7,7 @@ function App() {
 
   return (
     <>
-     {/*Hello Okten*/}
-
-        <MyComponents title={'hello1'}>
-            Hello
-            </MyComponents>
+        <FamilyComponent/>
 
           </>
   );
