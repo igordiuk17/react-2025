@@ -1,5 +1,14 @@
+import {simpsons} from "../../Data/Data.ts";
+import {CharacterComponent} from "../CharacterComponent/CharacterComponent.tsx";
+
 export const FamilyComponent=()=>{
     return(
-        <div></div>
+        <div>
+            {
+                simpsons.map((value,index) => <CharacterComponent key={index} item={value}>
+                    {value.info}
+                </CharacterComponent>)
+            }
+        </div>
     );
 };
